@@ -8,6 +8,6 @@
 # mail = celephrn@hotmail.com #
 # --------------------------- #
 
-file = "$HOME/.config/scripts/rofi/colors.rasi"
+file = "$HOME/.config/sunset/scripts/rofi/colors.rasi"
 
-rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/scripts/rofi/launcher.rasi
+rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/sunset/scripts/rofi/launcher.rasi

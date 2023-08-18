@@ -9,7 +9,7 @@
 # --------------------------- #
 
 # define the variables
-dir = "~/.config/rofi/sunset"
+dir = "~/.config/sunset/scripts/rofi/"
 
 comm = "rofi -theme $dir/powermenu.rasi"
 
