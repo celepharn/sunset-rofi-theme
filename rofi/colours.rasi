@@ -1,0 +1,7 @@
+/* colours */
+
+* {
+  bg:   	#20272d;
+  fg:		#a5a5a5;
+  accent:	#a0c4e2;
+}

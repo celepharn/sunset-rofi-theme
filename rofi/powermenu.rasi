@@ -1,0 +1,105 @@
+
+configuration {
+	font:			"Noto Sans 10";
+	show-icons:		false;
+    	/*display-drun: 	"";*/
+	drun-display-format:	"{icon} {name}";
+    	disable-history:    	false;
+	click-to-exit: 		true;
+}
+
+@import "colours.rasi"
+
+window {
+    	transparency:		"real";
+    	background-color:       @bg;
+	text-color:            	@fg;
+	border:                 0px;
+	border-color:           @selected;
+    	border-radius:          0px;
+    	width:                  400px;
+    	location:               center;
+    	anchor:                 center;
+    	x-offset:               0;
+    	y-offset:               0;
+}
+
+entry {
+    	background-color:       @bg;
+    	text-color:             @fg;
+    	placeholder-color:      @fg;
+    	placeholder:            "";
+    	expand:                 true;
+    	horizontal-align:       0;
+    	blink:                  false;
+    	padding:                6px;
+}
+
+listview {
+    	background-color:       @bg;
+    	columns:                1;
+    	lines:			5;
+    	spacing:                10px;
+    	cycle:                  true;
+    	dynamic:                true;
+    	layout:                 horizontal;
+}
+
+mainbox {
+    	background-color:       @al;
+    	children:               [ listview ];
+    	spacing:                10px;
+    	padding:                10px;
+    	border:                 0px;
+    	border-radius:          2px;
+    	border-color:		@accent;
+}
+
+element {
+    	background-color:       @bg;
+    	text-color:             @fg;
+    	orientation:            horizontal;
+    	border:                 0px;
+    	border-radius:          0px;
+    	border-color:           @fg;
+    	padding:                20px 25px 20px 25px;
+}
+
+element-icon {
+    	background-color: 	inherit;
+    	text-color:       	inherit;
+    	horizontal-align:       0.5;
+    	vertical-align:         0.5;
+    	size:                   0px;
+    	border:                 0px;
+}
+
+element selected {
+    	background-color:       @accent;
+    	text-color:             @bg;
+    	border:                	1px;
+    	border-radius:          2px;
+    	border-color:		@accent;
+}
+
+element.active,
+element.selected.urgent {
+  	background-color: 	@on;
+  	text-color: 		@background;
+ 	border-color: 		@on;
+}
+
+element.selected.urgent {
+  	border-color: 		@selected;
+}
+
+element.urgent,
+element.selected.active {
+  	background-color: 	@off;
+  	text-color: 		@background;
+  	border-color: 		@off;
+}
+
+element.selected.active {
+  	border-color: 		@selected;
+}
